@@ -1,0 +1,35 @@
+operacoes relacionais
+seleçao:corta horizontalmente
+σ salario >  3000 (Empregados)
+σ departamento_id = "20210001" (Empregados)
+σ cidade = "Rio de Janeiro" (Empregados)
+σ departamento_id = "20210002" ^ salario >  3000 (Empregados)
+
+
+Projeção:corta verticalmente
+Exercício:
+
+π cpf, nome(empregados)
+π bairro(sigma Estado = "Rio de janeiro (Empregados)) 
+π contratado_ctps(σ contratado <> null(Empregado))
+
+π nome (sigma supervisor_id = null (Empregados))
+
+p Pessoas (Empregados)
+p ctps <-- contratado_ctps, cnpj <-- terceirizado_cnpj (Pessoas)
+
+produto cartesiano: é uma multiplicação de tuplas
+
+
+Prova
+modelo relacional 
+algebra relacional  
+arquitetura de sgbd's
+
+ρ Maquina(π model, speed (PC) ∪ π  model, speed (Laptop))
+
+π ram (PC) ∩ π ram (Laptop)
+
+π hd(PC) - π hd(Laptop)
+
+π movies_genres.genre, movies.name(σ movies.id = movies_genres.movie_id(movies_genres ⨯ movies))
