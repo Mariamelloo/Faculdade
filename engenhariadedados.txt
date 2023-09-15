@@ -33,3 +33,7 @@ arquitetura de sgbd's
 π hd(PC) - π hd(Laptop)
 
 π movies_genres.genre, movies.name(σ movies.id = movies_genres.movie_id(movies_genres ⨯ movies))
+
+π first_name, role (σ id = actor_id (actors ⨯ roles))
+
+π photos.id, location, unixTime, photographerId, cameras.id, brand, model((photos) ⨝ cameraId = id (cameras))
