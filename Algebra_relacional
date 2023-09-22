@@ -1,0 +1,14 @@
+sigma departamento_id = numero(Empregados x Departamentos)
+
+Empregados juncao(sigma departamento_id = numero(Empregados x Departamentos))
+
+sigma - seleção(linhas)
+pi - projeção(colunas)
+junção - junta tudo com tudo
+divisão(A % B) todas as colunas que estão em B devem estar em A, 
+
+pi projeto_id(sigma cpf = c((Trabalha_em x(p c <- cpf(sigma nome = "talita"(empregados)))))
+
+(pi cpf, projeto_id(Trabalha_em)) / (pi projeto_id(sigma cpf = c((Trabalha_em x(p c <- cpf(sigma nome = "talita"(empregados))))))
+
+Qualidade de Projeto Lógico
